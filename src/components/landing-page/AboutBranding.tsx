@@ -27,7 +27,7 @@ const AboutBranding = () => {
         <div className="w-[90%] h-[70%] grid grid-rows-12 grid-cols-12 grid-flow-row gap-10 p-5">
           <motion.div
             variants={fadeIn("right", "spring", 1 * 0.125, 0.75)}
-            className="row-span-5 col-span-6 px-10 py-7 rounded-lg border border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="row-span-5 col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -50,7 +50,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 2 * 0.125, 0.75)}
-            className="row-span-6 col-span-6 px-10 py-7 rounded-lg border border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="row-span-6 col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -74,7 +74,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 3 * 0.125, 0.75)}
-            className="row-span-7 col-span-5 px-10 py-7 rounded-lg border border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="row-span-7 col-span-5 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -98,7 +98,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 4 * 0.125, 0.75)}
-            className="row-span-6 col-span-7 px-10 py-7 rounded-lg border border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="row-span-6 col-span-7 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
