@@ -5,12 +5,12 @@ import Button from "../Button";
 
 const AboutBranding = () => {
   return (
-    <div className="Frame1584 px-36 h-[100vh] justify-between items-center flex">
-      <div className="Frame15 w-[30%] flex-col justify-start items-start gap-5 flex">
+    <div className="Frame1584 px-36 lg:h-[100vh] justify-between items-center flex flex-col lg:flex-row">
+      <div className="Frame15 w-full lg:w-[30%] flex-col justify-center items-center lg:justify-start lg:items-start gap-5 flex">
         <p className="Branding  text-white text-5xl font-bold font-['Source Sans Pro'] uppercase">
           Branding
         </p>
-        <p className="  text-white text-2xl font-normal font-['Source Sans Pro'] leading-9 tracking-tight">
+        <p className="text-center lg:text-left text-white text-2xl font-normal font-['Source Sans Pro'] leading-9 tracking-tight">
           We focus on digital brands: virtual identities for online and software
           products and companies.
         </p>
@@ -23,11 +23,11 @@ const AboutBranding = () => {
           </div>
         </Button>
       </div>
-      <div className="Frame1576 w-[70%] items-center justify-center flex h-full">
-        <div className="w-[90%] h-[70%] grid grid-rows-12 grid-cols-12 grid-flow-row gap-10 p-5">
+      <div className="Frame1576  w-full lg:w-[70%] items-center justify-center flex h-full">
+        <div className="w-[90%] h-[70%] grid grid-rows-4 lg:grid-rows-12 lg:grid-cols-12 grid-flow-row gap-10 p-5">
           <motion.div
             variants={fadeIn("right", "spring", 1 * 0.125, 0.75)}
-            className="row-span-5 col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="lg:row-span-5 lg:col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -50,7 +50,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 2 * 0.125, 0.75)}
-            className="row-span-6 col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="lg:row-span-6 lg:col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -74,7 +74,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 3 * 0.125, 0.75)}
-            className="row-span-7 col-span-5 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="lg:row-span-7 lg:col-span-5 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -98,7 +98,7 @@ const AboutBranding = () => {
           </motion.div>
           <motion.div
             variants={fadeIn("right", "spring", 4 * 0.125, 0.75)}
-            className="row-span-6 col-span-7 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
+            className="lg:row-span-6 lg:col-span-7 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
           >
             <div className="flex w-full">
               <div className="w-[100px] relative">
@@ -108,7 +108,7 @@ const AboutBranding = () => {
                   src={iconBrain}
                 />
               </div>
-              <div className="h-[60px] w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
+              <div className="h-[60px] w-full lg:w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
                 Custom logo design
               </div>
             </div>

@@ -27,24 +27,43 @@ body {
 }
 
 :root {
-  --color-bg1: rgb(70, 93, 185); // góc dưới bên trái
-  --color-bg2: rgb(70, 93, 185); // góc trên bên phải
-  --color1: 79, 223, 255;
-  --color2: 79, 223, 255;
-  --color3: 79, 223, 255;
-  --color4: 79, 223, 255;
-  --color5: 79, 223, 255;
+  --color-bg1: rgb(89, 101, 148); // góc dưới bên trái
+  --color-bg2: rgb(35, 188, 203); // góc trên bên phải
+  // --color1: 79, 223, 255;
+  // --color2: 35, 188, 203;
+  --color1: 105, 182, 179;
+  --color2: 105, 182, 179;
+  --color3: 105, 182, 179;
+  --color4: 105, 182, 179;
+  --color5: 105, 182, 179;
+  // --color4: 79, 223, 255;
+  // --color5: 79, 223, 255;
   --color6: 7, 59, 202;
   --color-interactive: 79, 223, 255;
   --circle-size: 80%;
   --blending: hard-light;
   overflow-x: hidden;
 }
+
 @media only screen and (min-width: 1100px) {
+  .FooterTwBgNoRepeat {
+    background-image: url(/src/assets/info-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .Solar {
+    background-image: url(/src/assets/Solar.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
   .gradients-container {
+    filter: blur(40px);
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    height: -webkit-fill-available;
     background-image: var(--noise);
+    position: absolute;
     .g6 {
       z-index: -1;
       position: absolute;
@@ -65,18 +84,37 @@ body {
       animation: moveVerticalSlight 30s ease infinite;
       opacity: 1;
     }
+
+    .g7 {
+      z-index: -1;
+      border-radius: 50%;
+      position: absolute;
+      background: linear-gradient(
+        0deg,
+        rgba(131, 215, 232, 0.7) 1%,
+        rgba(9, 9, 121, 0.7) 87%,
+        rgba(131, 215, 232, 0.7) 100%
+      );
+      mix-blend-mode: var(--blending);
+      width: 167%;
+      height: 150%;
+      top: 0%;
+      left: -30%;
+      transform-origin: calc(50% - 400px);
+      opacity: 1;
+    }
   }
 }
 
 @keyframes moveVerticalSlight {
   0% {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
   }
   50% {
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-20%);
+    transform: translateY(-10%);
   }
 }
 
@@ -116,30 +154,31 @@ body {
   }
 }
 
+.noise {
+  background-image: url("../assets/noise2.png");
+  position: absolute;
+  top: 0;
+}
+
+.background-wrapper {
+  background: #061e60;
+}
+
 .gradient-bg {
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  //   background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  background: linear-gradient(180deg, #4e6ab52b, black);
   top: 0;
   left: 0;
 
-  svg {
-    display: none;
-  }
-
   .gradients-container {
-    filter: url(#grainy) blur(40px);
+    filter: blur(40px);
     width: 100%;
     height: 100%;
-    background-image: var(--noise);
   }
 
-  .g {
-    // noise
-    background-image: var(--noise);
-  }
   .g1 {
     position: absolute;
     background: radial-gradient(

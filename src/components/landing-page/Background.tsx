@@ -1,7 +1,4 @@
-// import useBackgroundMotion from "../../hooks/useBackgroundMotion";
-
 const Background = () => {
-  // useBackgroundMotion();
   return (
     <div className="gradients-container">
       <div className="g1"></div>

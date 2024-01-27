@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { navLinks } from "../constants";
 import { styles } from "../styles";
-import { logo } from "../assets";
+import { close, logo, menu } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -41,7 +41,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-18 h-18 object-contain" />
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -55,9 +55,9 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
-            src={close}
+            src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
