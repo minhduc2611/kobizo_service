@@ -4,11 +4,10 @@ import {
   instagram,
   linkedIn,
   logo,
-  solar,
   space1,
   space2,
   space3,
-  twitter,
+  twitter
 } from "../../assets";
 import StarWrapper from "../../hoc/SectionWrapper";
 import Button from "../Button";
