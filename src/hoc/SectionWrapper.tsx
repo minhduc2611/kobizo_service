@@ -1,12 +1,13 @@
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
 import { staggerContainer } from "../utils/motion";
+import { ComponentType } from "react";
 
-const StarWrapper = (Component, idName) =>
+const StarWrapper = (Component: ComponentType, idName: string) =>
   function HOC() {
     return (
       <motion.section
-        variants={staggerContainer()}
+        variants={staggerContainer() as Variants}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
