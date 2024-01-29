@@ -1,62 +1,46 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
+
 import close from "./close.svg";
+import menu from "./menu.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import iconBrain from "./iconBrain.png";
+import iconGuide from "./iconGuide.png";
+import iconIdentity from "./iconIdentity.png";
+import iconConsult from "./iconConsult.png";
+import iconImplement from "./iconImplement.png";
+import noise from "./noise2.png";
+import space1 from "./space1.svg";
+import space2 from "./space2.svg";
+import space3 from "./space3.svg";
+import infoBg from "./info-bg.jpeg";
+import instagram from "./instagram.svg";
+import facebook from "./facebook.svg";
+import discord from "./discord.svg";
+import linkedIn from "./linkedIn.svg";
+import twitter from "./twitter.svg";
+import solar from "./solar.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import arrowRight from "./arrowRight.svg";
 
 export {
+  iconBrain,
+  iconGuide,
+  iconIdentity,
+  iconConsult,
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
+  arrowRight,
+  iconImplement,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  noise,
+  menu,
+  space1,
+  space2,
+  space3,
+  infoBg,
+  instagram,
+  facebook,
+  discord,
+  linkedIn,
+  twitter,
+  solar
 };
