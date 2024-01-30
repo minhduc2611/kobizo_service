@@ -1,19 +1,18 @@
 import {
-  Effects,
-  Environment,
-  OrbitControls,
-  PerspectiveCamera,
-  Sphere,
-  Stars,
+    Effects,
+    Environment,
+    OrbitControls,
+    PerspectiveCamera,
+    Sphere,
+    Stars,
 } from "@react-three/drei";
-import { Canvas, extend } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Gradient, LayerMaterial } from "lamina";
 import { Suspense, useRef } from "react";
-import type { Mesh, PointLight } from 'three'
+import type { Mesh, PointLight } from "three";
 
 import * as THREE from "three";
-import { UnrealBloomPass } from "three-stdlib";
-extend({ UnrealBloomPass });
+
 
 const Background = () => {
   return (
@@ -41,9 +40,7 @@ const ShowCaseGallerySpaceOne = () => {
       <Canvas
         className="DivCardInner lg:row-span-4 lg:col-span-1 w-full h-full rounded-2xl bg-black"
         shadows
-        gl={{
-          useLegacyLights: true,
-        }}
+        frameloop="demand"
       >
         <Stars />
         <Background />
@@ -97,7 +94,6 @@ const ShowCaseGallerySpaceOne = () => {
         <mesh ref={orbitRef} position={[0, 0, 0]}>
           <torusGeometry args={[3, 0.01, 16, 100]}></torusGeometry>
           <meshStandardMaterial color="black" />
-
         </mesh>
 
         {/* Planet 1 */}
