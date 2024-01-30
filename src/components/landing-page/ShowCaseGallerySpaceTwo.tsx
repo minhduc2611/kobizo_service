@@ -9,6 +9,7 @@ import {
 import { Canvas, extend } from "@react-three/fiber";
 import { Gradient, LayerMaterial } from "lamina";
 import { Suspense, useRef } from "react";
+import type { Mesh, PointLight } from 'three'
 
 import * as THREE from "three";
 import { UnrealBloomPass } from "three-stdlib";
@@ -31,10 +32,10 @@ const Background = () => {
   );
 };
 const ShowCaseGallerySpaceOne = () => {
-  const sunRef = useRef();
-  const planet1Ref = useRef();
-  const orbitRef = useRef();
-  const planet2Ref = useRef();
+  const sunRef = useRef<PointLight>(null!);
+  const planet1Ref = useRef<Mesh>(null!);
+  const planet2Ref = useRef<Mesh>(null!);
+  const orbitRef = useRef<Mesh>(null!);
   return (
     <div className="w-full h-full relative">
       <Canvas
@@ -87,7 +88,7 @@ const ShowCaseGallerySpaceOne = () => {
           intensity={1}
           color="#59d1f0"
         />
-        <mesh ref={sunRef} position={[10, 10, 10]}>
+        <mesh position={[10, 10, 10]}>
           <sphereGeometry args={[2, 32, 32]} />
           <meshStandardMaterial emissive="#59d1f0" />
         </mesh>

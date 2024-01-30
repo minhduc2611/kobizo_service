@@ -9,6 +9,7 @@ import {
 import { Canvas, extend } from "@react-three/fiber";
 import { Gradient, LayerMaterial } from "lamina";
 import { Suspense, useRef } from "react";
+import type { Mesh, PointLight } from "three";
 
 import * as THREE from "three";
 import { UnrealBloomPass } from "three-stdlib";
@@ -31,9 +32,9 @@ const Background = () => {
   );
 };
 const ShowCaseGallerySpaceOne = () => {
-  const sunRef = useRef();
-  const planet1Ref = useRef();
-  const planet2Ref = useRef();
+  const sunRef = useRef<PointLight>(null!);
+  const planet1Ref = useRef<Mesh>(null!);
+  const planet2Ref = useRef<Mesh>(null!);
   return (
     <div className="w-full h-full relative">
       <Canvas
@@ -53,20 +54,6 @@ const ShowCaseGallerySpaceOne = () => {
           fov={75}
           position={[16, 18, -6]}
         />
-        {/* <ambientLight intensity={1} />
-        <spotLight
-          position={[10, 10, 10]}
-          angle={0.5}
-          intensity={1}
-          castShadow
-          penumbra={1}
-        />*/}
-        {/* <ambientLight intensity={0.5} /> */}
-
-        {/* <Bloom>
-        
-          <Box position={[1.2, 0, 0]} />
-        </Bloom> */}
         <hemisphereLight intensity={0.2} color="#c434d8" groundColor="blue" />
         <directionalLight
           castShadow
@@ -86,7 +73,7 @@ const ShowCaseGallerySpaceOne = () => {
           intensity={1}
           color="purple"
         />
-        <mesh ref={sunRef} position={[0, 0, 0]}>
+        <mesh position={[0, 0, 0]}>
           <sphereGeometry args={[2, 32, 32]} />
           <meshStandardMaterial emissive="purple" />
         </mesh>
