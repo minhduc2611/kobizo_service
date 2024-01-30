@@ -21,6 +21,7 @@ function App() {
           <div className="noise transparent-bg w-full h-[100vh] "></div>
           <About />
           <ShowCase />
+          
         </div>
       </div>
     </BrowserRouter>

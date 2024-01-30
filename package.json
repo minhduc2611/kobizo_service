@@ -10,13 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.96.5",
+    "@react-three/fiber": "^8.15.15",
+    "@react-three/postprocessing": "^2.15.12",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.3",
+    "lamina": "^1.1.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "react-tilt": "^1.0.2",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "three-stdlib": "^2.29.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
