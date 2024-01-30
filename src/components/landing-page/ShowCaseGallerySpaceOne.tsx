@@ -13,6 +13,7 @@ import type { Mesh, PointLight } from "three";
 
 import * as THREE from "three";
 
+
 const Background = () => {
   return (
     <>
@@ -39,6 +40,7 @@ const ShowCaseGallerySpaceOne = () => {
         className="DivCardInner lg:row-span-4 lg:col-span-1 w-full h-full rounded-2xl bg-black"
         shadows
         frameloop="demand"
+
       >
         <Stars />
         <Background />

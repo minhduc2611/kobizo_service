@@ -1,7 +1,9 @@
+import { extend } from "@react-three/fiber";
 import ShowCaseGallerySpaceOne from "./ShowCaseGallerySpaceOne";
 import ShowCaseGallerySpaceThree from "./ShowCaseGallerySpaceThree";
 import ShowCaseGallerySpaceTwo from "./ShowCaseGallerySpaceTwo";
-
+import { UnrealBloomPass } from "three-stdlib";
+extend({ UnrealBloomPass });
 const ShowCaseGallery = () => {
   return (
     <div className="Frame1587 h-[100vh] relative py-28 px-28 grid grid-rows-4 grid-cols-1 lg:grid-cols-3 grid-flow-row gap-10">
