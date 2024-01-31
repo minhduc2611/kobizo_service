@@ -117,7 +117,7 @@ const ShowCaseGallerySpaceOne = () => {
         </Suspense>
         <OrbitControls />
       </Canvas>
-      <div className="absolute bottom-24 left-8 text-4xl">
+      <div className="absolute bottom-8 lg:bottom-24 left-8 text-lg md:text-2xl lg:text-4xl">
         <span>
           Designing <br /> for Delight
         </span>
