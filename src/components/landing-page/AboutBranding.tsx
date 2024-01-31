@@ -24,7 +24,7 @@ const AboutBranding = () => {
         </Button>
       </div>
       <div className="Frame1576  w-full lg:w-[70%] items-center justify-center flex h-full">
-        <div className="w-[90%] h-[70%] grid grid-rows-4 lg:grid-rows-12 lg:grid-cols-12 grid-flow-row gap-10 p-5">
+        <div className="w-[90%] h-[70%] grid grid-rows-4 lg:grid-rows-12 lg:grid-cols-12 grid-flow-row gap-10 mt-10 lg:p-5">
           <motion.div
             variants={fadeIn("right", "spring", 1 * 0.125, 0.75)}
             className="lg:row-span-5 lg:col-span-6 px-10 py-7 rounded-lg border bg-white bg-opacity-10 border-teal-200 backdrop-blur-xl flex-col justify-start items-start gap-5 inline-flex bg-transparent"
