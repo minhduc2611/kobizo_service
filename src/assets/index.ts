@@ -20,12 +20,27 @@ import space3 from "./space3.svg";
 import twitter from "./twitter.svg";
 
 import arrowRight from "./arrowRight.svg";
+import solarLotties from "./solar-lotties.json";
 
 export {
-  arrowRight, close, discord, facebook, iconBrain, iconConsult, iconGuide,
-  iconIdentity, iconImplement, infoBg,
-  instagram, linkedIn, logo, menu, noise, space1,
+  arrowRight,
+  close,
+  discord,
+  facebook,
+  iconBrain,
+  iconConsult,
+  iconGuide,
+  iconIdentity,
+  iconImplement,
+  infoBg,
+  instagram,
+  linkedIn,
+  logo,
+  menu,
+  noise,
+  space1,
   space2,
-  space3, twitter
+  space3,
+  twitter,
+  solarLotties,
 };
-
