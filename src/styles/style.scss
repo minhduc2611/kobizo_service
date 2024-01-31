@@ -8,6 +8,10 @@ body {
 .red-md {
   color: red;
 }
+.my-div {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0px) translateZ(0px) !important;
+}
 
 .text-container {
   z-index: 49;
@@ -55,7 +59,6 @@ body {
     background-image: url(/src/assets/solar.svg);
     background-size: cover;
     background-repeat: no-repeat;
-
   }
   .gradients-container {
     filter: blur(40px);

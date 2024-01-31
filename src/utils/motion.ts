@@ -1,7 +1,8 @@
 import { Variants } from "framer-motion";
-
+import {isMobile} from 'react-device-detect';
+const Default = {}
 export const textVariant = (delay = 0) => {
-  return {
+  return isMobile? Default :{
     hidden: {
       y: -50,
       opacity: 0,
@@ -24,7 +25,7 @@ export const fadeIn = (
   delay = 0,
   duration = 0
 ) => {
-  return {
+  return  isMobile? Default :{
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
       y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -45,7 +46,7 @@ export const fadeIn = (
 };
 
 export const zoomIn = (delay = 0, duration = 0) => {
-  return {
+  return  isMobile? Default :{
     hidden: {
       scale: 0,
       opacity: 0,
@@ -69,7 +70,7 @@ export const slideIn = (
   delay = 0,
   duration = 0
 ) => {
-  return {
+  return  isMobile? Default :{
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
       y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
