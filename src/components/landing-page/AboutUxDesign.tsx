@@ -7,7 +7,7 @@ const AboutUxDesignCallToAction = () => {
       <div className="UiUxDesign text-white text-4xl font-bold font-['Source Sans Pro'] uppercase">
         UI/UX Design
       </div>
-      <div className="w-[40%] text-center text-white text-xl font-normal font-['Source Sans Pro'] leading-9 tracking-tight">
+      <div className=" lg:w-[40%] text-center text-white text-xl font-normal font-['Source Sans Pro'] leading-9 tracking-tight">
         With the orientation to become the No.1 experience research and analysis
         team in the market, we deploy research services exclusively for
         customers as follows.
@@ -23,7 +23,7 @@ const AboutUxDesignServiceList = () => {
   return (
     <div className="Frame1573 w-full flex-col lg:flex-row h-[70%] flex gap-10 p-10">
         <div className="Frame1540 lg:w-[45%] px-14 pt-10 pb-14 bg-white bg-opacity-10 rounded-3xl border border-teal-200 backdrop-blur-lg flex-col justify-start items-start gap-10 inline-flex">
-          <div className="Frame1570 flex lg:flex-col flex-row w-full gap-10">
+          <div className="Frame1570 flex flex-col w-full gap-10">
             <div className="Frame1572 w-32 h-32 relative">
               <div className="Ellipse2 w-32 h-32 left-0 top-[2px] absolute bg-teal-300 rounded-full blur-lg" />
               <img
@@ -72,7 +72,7 @@ const AboutUxDesignServiceList = () => {
           </div>
         </div>
         <div className="Frame1541 lg:w-[55%] h-full px-14 pt-10 pb-14 bg-white bg-opacity-10 rounded-3xl border border-teal-200 backdrop-blur-lg flex-col justify-start items-start gap-10 inline-flex">
-          <div className="Frame1570 flex lg:flex-col flex-row w-full gap-10">
+          <div className="Frame1570 flex flex-col w-full gap-10">
             <div className="Frame1572 w-32 h-32 relative">
               <div className="Ellipse2 w-32 h-32 left-0 top-[2px] absolute bg-teal-300 rounded-full blur-lg" />
               <img

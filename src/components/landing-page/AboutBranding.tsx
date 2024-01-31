@@ -5,7 +5,7 @@ import Button from "../Button";
 
 const AboutBranding = () => {
   return (
-    <div className="Frame1584 px-36 lg:h-[100vh] justify-between items-center flex flex-col lg:flex-row">
+    <div className="Frame1584 px-12 md:px-36 lg:h-[100vh] justify-between items-center flex flex-col lg:flex-row">
       <div className="Frame15 w-full lg:w-[30%] flex-col justify-center items-center lg:justify-start lg:items-start gap-5 flex">
         <p className="Branding  text-white text-5xl font-bold font-['Source Sans Pro'] uppercase">
           Branding
@@ -37,7 +37,7 @@ const AboutBranding = () => {
                   src={iconBrain}
                 />
               </div>
-              <div className="h-[60px] w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
+              <div className="h-[60px] w-[70%] flex items-center text-white text-sm lg:text-xl md:text-lg font-bold font-['Source Sans Pro'] capitalize">
                 Brand insights and strategy
               </div>
             </div>
@@ -60,7 +60,7 @@ const AboutBranding = () => {
                   src={iconGuide}
                 />
               </div>
-              <div className="h-[60px] w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
+              <div className="h-[60px] w-[70%] flex items-center text-white text-sm lg:text-xl md:text-lg font-bold font-['Source Sans Pro'] capitalize">
                 Brand guidelines
               </div>
             </div>
@@ -84,7 +84,7 @@ const AboutBranding = () => {
                   src={iconIdentity}
                 />
               </div>
-              <div className="h-[60px] w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
+              <div className="h-[60px] w-[70%] flex items-center text-white text-sm lg:text-xl md:text-lg font-bold font-['Source Sans Pro'] capitalize">
                 Brand <br />
                 identity
               </div>
@@ -108,7 +108,7 @@ const AboutBranding = () => {
                   src={iconBrain}
                 />
               </div>
-              <div className="h-[60px] w-full lg:w-[70%] flex items-center text-white text-xl font-bold font-['Source Sans Pro'] capitalize">
+              <div className="h-[60px] w-full lg:w-[70%] flex items-center text-white text-sm lg:text-xl md:text-lg font-bold font-['Source Sans Pro'] capitalize">
                 Custom logo design
               </div>
             </div>
