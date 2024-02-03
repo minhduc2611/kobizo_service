@@ -17,6 +17,7 @@ const ScreenLoader = () => {
     countStart: 3,
   });
 
+  console.log('count', count)
   useEffect(() => {
     startCountdown();
   }, []);
